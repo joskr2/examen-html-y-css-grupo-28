@@ -1,0 +1,362 @@
+/* Estilos Globales y de Base (Primero Móvil) */
+*,
+*::before,
+*::after {
+  /* box-sizing: #####COMPLETA EL VALOR AQUI###; */
+  /* Modelo de caja universal. */
+  margin: 0;
+  /* Resetea márgenes universales. */
+  padding: 0;
+  /* Resetea rellenos universales. */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* Fuente principal para el cuerpo. */
+  background-color: #e8ecef;
+  /* Tono de fondo sutil. */
+
+  /* ############ COMPLETA AQUI########### */
+  /* Activa Flexbox para el body. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Centra la tarjeta horizontalmente. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+  align-items: flex-start;
+  /* Alinea la tarjeta arriba en móvil, se ajustará en escritorio. */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Altura mínima del viewport. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+  padding: 25px;
+  /* Espacio general en la página. */
+}
+
+.tarjeta-producto {
+  background: #fff;
+  border-radius: 15px;
+  /* Esquinas suavemente redondeadas. */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+  /* Sombra para dar efecto de elevación. */
+
+  /* ############ COMPLETA AQUI########### */
+  /* Controla el contenido que excede los límites. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+
+  width: 100%;
+  /* Ancho fluido. */
+  max-width: 420px;
+  /* Límite de ancho para móviles. */
+  display: flex;
+  /* Usamos flex para el apilamiento vertical inicial en móvil */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Los hijos directos se apilarán verticalmente */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+}
+
+
+.imagen-producto img {
+  width: 100%;
+  /* La imagen es fluida. */
+  height: auto;
+  /* Mantiene la proporción. */
+  display: block;
+
+}
+
+.info-producto {
+  padding: 25px;
+  /* Espacio interno para que el contenido respire. */
+  display: flex;
+  flex-direction: column;
+  /* Organiza los elementos hijos verticalmente. */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Espaciado entre título, descripción y precio-accion. */
+  /* Espaciado entre elementos */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Permite que esta sección crezca si .tarjeta-producto tuviera una altura fija (no es el caso aquí pero buena práctica). */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+}
+
+.info-producto h2 {
+  font-family: 'Roboto Slab', serif;
+  /* Fuente para títulos. */
+  font-size: 1.8em;
+  /* Tamaño de fuente para título móvil. */
+  color: #1a2533;
+  font-weight: 700;
+  line-height: 1.3;
+  /* Altura de línea para título. */
+  /* margin-bottom: 10px; */
+  /* No es necesario si usamos gap en .info-producto */
+}
+
+.info-producto .descripcion {
+  font-size: 0.95em;
+  /* Tamaño de fuente para descripción móvil. */
+  color: #4a5568;
+  line-height: 1.65;
+  /* margin-bottom: 20px; */
+  /* No es necesario si usamos gap en .info-producto */
+  flex-grow: 1;
+  /* Permite que la descripción ocupe el espacio vertical disponible antes del .precio-accion. */
+}
+
+.precio-accion {
+  display: flex;
+  /* Activa Flexbox. */
+
+  /* ############ COMPLETA AQUI########### */
+  /* Apila los elementos flex en modo vertical */
+  /* Apilado en móvil por defecto. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+  align-items: stretch;
+  /* Hace que el botón ocupe todo el ancho si está apilado. */
+  gap: 15px;
+  /* Espacio entre precio y botón móvil. */
+  margin-top: auto;
+  /* Empuja esta sección hacia abajo, especialmente útil si .info-producto tiene más altura. */
+  padding-top: 20px;
+  /* Relleno superior para precio-accion. */
+  border-top: 1px solid #cbd5e0;
+  /* Línea divisoria. */
+}
+
+.precio-accion .precio {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.2em;
+  /* Precio prominente. */
+  font-weight: 700;
+  color: #27ae60;
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Centrado cuando está apilado. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+}
+
+.boton-comprar {
+  background: #7D3C98;
+  /* Color temático de la imagen. */
+  color: white;
+  /* Texto blanco para contraste. */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Sin borde. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+  padding: 15px 20px;
+  /* Buen tamaño de toque. */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Esquinas redondeadas. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+
+  /* ############ COMPLETA AQUI########### */
+  /* Tamaño de fuente legible. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+
+  font-weight: 600;
+  text-align: center;
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Texto en mayúsculas. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+  letter-spacing: 0.5px;
+  /* Ligero espaciado entre letras. */
+  transition: background-color 0.25s ease-out, transform 0.15s ease-out;
+  /* Transición para efectos. */
+
+
+  /* ############ COMPLETA AQUI########### */
+  /* Ocupa todo el ancho disponible en el contenedor flex apilado. */
+  /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+  /* ##################################### */
+
+}
+
+.boton-comprar:hover,
+.boton-comprar:focus {
+  /* Considera ambos estados para accesibilidad. */
+  background: #5d2177;
+  /* Un tono más oscuro de morado. */
+  transform: translateY(-2px);
+  /* Efecto sutil al pasar el mouse/focus. */
+}
+
+
+/* --- Media Queries para Escritorio y Pantallas Más Grandes --- */
+
+/* PONER DENTRO DE LOS PARENTESIS EL VALOR QUE QUIERAS para que se aplique el siguiente bloque de estilos */
+@media () {
+
+  /* Punto de quiebre común. */
+  body {
+
+    /* ############ COMPLETA AQUI########### */
+    /* Centra la tarjeta verticalmente en escritorio. */
+    /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+    /* ##################################### */
+
+
+  }
+
+  .tarjeta-producto {
+
+
+    /* ############ COMPLETA AQUI########### */
+    /* Activa Grid. */
+    /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+    /* ##################################### */
+
+
+    /* ############ COMPLETA AQUI########### */
+    /* Columna de imagen más pequeña, info más grande. */
+    /* RELACION DE ASPECTO 1 A 2  */
+
+    /* PISTA: Como el grid tiene 2 columnas, puedes usar la propiedad grid-template-columns para definir el tamaño de cada columna. */
+
+    /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+    /* ##################################### */
+
+    gap: 30px;
+    /* Espacio entre las celdas del grid. */
+    max-width: 850px;
+    /* Ancho mayor para escritorio. */
+    padding: 30px;
+    /* Relleno general de la tarjeta en escritorio. */
+  }
+
+  .imagen-producto img {
+    height: 100%;
+    /* La imagen llena la altura de su celda. */
+    object-fit: cover;
+    /* La imagen cubre el área sin deformarse. */
+    border-radius: 10px;
+    /* Bordes redondeados para la imagen en escritorio. */
+  }
+
+  .info-producto {
+    padding: 0;
+  }
+
+  .info-producto h2 {
+    font-size: 2.2em;
+    /* Título más grande para escritorio. */
+  }
+
+  .info-producto .descripcion {
+    font-size: 1em;
+    /* Descripción ligeramente más grande. */
+    /* flex-grow sigue siendo útil aquí */
+  }
+
+  .precio-accion {
+    flex-direction: row;
+    /* Precio y botón en línea. */
+
+
+
+    /* ############ COMPLETA AQUI########### */
+    /* justificar el contenido entre precio y botón al ponerles un espacio entre ellos */
+    /* Precio a la izq, botón a la der. */
+    /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+    /* ##################################### */
+
+    align-items: center;
+    /* Alineados verticalmente en el centro. */
+    /* margin-top no es necesario si .info-producto usa flex-grow para la descripción. */
+    gap: 20px;
+    /* Espacio entre precio y botón. */
+  }
+
+  .precio-accion .precio {
+    font-size: 2.5em;
+    /* Precio aún más prominente. */
+    text-align: left;
+    /* Alineado a la izquierda cuando está en línea. */
+  }
+
+  .boton-comprar {
+
+    /* ############ COMPLETA AQUI########### */
+    /* Ancho se ajusta al contenido. */
+    /* ### PON LA PROPIEDAD Y EL VALOR QUE FALTA AQUI ### */
+    /* ##################################### */
+
+
+    padding: 15px 35px;
+    /* Relleno ligeramente mayor para escritorio. */
+    font-size: 0.95em;
+    /* Puede ser un poco más pequeño si el padding es generoso. */
+  }
+}
+
+@media (min-width: Valor en pixeles) {
+  .tarjeta-producto {
+    max-width: 950px;
+    /* Aún más ancho para pantallas grandes */
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .info-producto h2 {
+    font-size: 2.5em;
+  }
+
+  .info-producto .descripcion {
+    font-size: 1.05em;
+  }
+
+  .precio-accion .precio {
+    font-size: 2.8em;
+  }
+
+  .boton-comprar {
+    padding: 18px 40px;
+  }
+}
